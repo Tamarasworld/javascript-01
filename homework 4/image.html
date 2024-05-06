@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script src="image.js"></script>
+    <style src="image.css"></style>
+</head>
+
+<body>
+    <h1>Image Display</h1>
+    <form id="imageForm" onsubmit="return false;">
+        <label for="imageUrl">Please enter the web address of a image:</label>
+        <input type="url" id="imageUrl" name="imageUrl" required>
+        <button onclick="displayImage()">Submit</button>
+    </form>
+    <div id="imageContainer">
+
+        <!--Image will be displayed here-->
+    </div>
+    <div id="imageCount">
+        Number of Images: <span id="count">0</span>
+    </div>
+
+</body>
+
+</html>

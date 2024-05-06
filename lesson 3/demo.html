@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animateContainer {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: pink;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="myheading" id="headingID">Headings</h1>
+    <h2 id="changeText" onclick="changeText(this)" style="cursor: pointer">Original Text</h2>
+
+    <button id="changeColor">Change Color</button>
+    <button id="displayDate">Get Date</button>
+    <button id="time">Get Time</button>
+    <a href="#">Link</a>
+    <p>test 1</p>
+    <p>test 2</p>
+    <p>test 3</p>
+    <p class="red">test</p>
+    <p class="red">test</p>
+    <p class="red">test</p>
+    <div id="myContainer"></div>
+    <div id="animateContainer">
+        <div id="animate"></div>
+    </div>
+    <div id="position">0</div>
+    <button onclick="move()">Animate Me</button>
+    <script src="demo.js"></script>
+</body>
+
+</html>
